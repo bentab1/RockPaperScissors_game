@@ -1,0 +1,39 @@
+.move-icon {
+  border: white, solid;
+  height: 40px;
+}
+
+.moves {
+  margin-left: 100px;
+}
+body {
+  background-color: rgb(197, 190, 190);
+}
+.button {
+  border: 3px white solid;
+  background-color: rgb(14, 29, 29);
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+
+.result {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: 130px;
+}
+
+.score {
+  margin-top: 40px;
+  margin-left: 100px;
+}
+
+.reset-button {
+  border-radius: 2px;
+  border: none;
+  height: 30px;
+  width: 120px;
+  margin-left: 120px;
+  background-color: rgb(170, 205, 214);
+}
