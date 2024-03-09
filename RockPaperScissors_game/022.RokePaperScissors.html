@@ -64,6 +64,8 @@
       <p class="js-score score"></p>
       <button
         onclick="
+
+        
       console.log('score was reset')
       score.wins= 0;
       score.losses= 0;
@@ -72,10 +74,21 @@
       localStorage.removeItem('score')
 
       updateScoreElement()
+      
       "
-        class="reset-button"
+        class="js-reset-button reset-button"
       >
         Reset score
+      </button>
+      <button
+        onclick="
+         Playing();
+        autoPlay();
+        
+      "
+        class="js-button-sub auto-play"
+      >
+        Auto Play
       </button>
     </div>
 

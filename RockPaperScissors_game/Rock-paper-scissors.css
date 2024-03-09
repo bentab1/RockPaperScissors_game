@@ -34,6 +34,18 @@ body {
   border: none;
   height: 30px;
   width: 120px;
-  margin-left: 120px;
-  background-color: rgb(170, 205, 214);
+  margin-left: 80px;
+  background-color: aqua;
+}
+
+.auto-play {
+  background-color: aqua;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.isPlaying {
+  background-color: greenyellow;
 }

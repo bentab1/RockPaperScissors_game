@@ -6,6 +6,38 @@ let score = JSON.parse(localStorage.getItem("score")) || {
 
 updateScoreElement();
 
+function Playing() {
+  const buttonElement = document.querySelector(".js-button-sub");
+  if (buttonElement.innerHTML === "Playing") {
+    buttonElement.innerHTML = "Auto Play";
+    buttonElement.classList.remove("isPlaying");
+  } else {
+    buttonElement.innerHTML = "Playing";
+    buttonElement.classList.add("isPlaying");
+  }
+  return buttonElement.innerHTML;
+}
+//Let just create Auto play function here
+//so we can use setInterval() to run the play
+let isAutoPlaying = false;
+let intervalId;
+function autoPlay() {
+  if (!isAutoPlaying) {
+    //Because setInterval returns ID, we would use the id to stop the interval. we would creat a variable to store the setInterval
+    //Remember every time it plays the game, it returns a different Id , so in other to save the last time ID, we will create the variable outside the function
+    intervalId = setInterval(function () {
+      //we need to provide this function with a playerMove
+      const playerMove1 = pickComputerMove();
+      playGame(playerMove1);
+    }, 3000);
+    isAutoPlaying = true;
+    //now we use an else statement with a function called clear interval to stop the setInterval
+  } else {
+    clearInterval(intervalId);
+    isAutoPlaying = false;
+  }
+}
+
 function playGame(playerMove) {
   console.log(score);
   const computerMove = pickComputerMove();

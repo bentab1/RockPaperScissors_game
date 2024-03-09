@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../JavascriptCourse/Rock-paper-scissors-Game"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "javascriptCourseContinuation"
+  }
+}
